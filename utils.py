@@ -1,4 +1,5 @@
 import requests
+import json
 from _datetime import datetime
 
 def get_data(url):
@@ -90,41 +91,8 @@ def summary(data):
     return data
 
 
-
 def print_data(data):
     for i in range(5):
         str = f'{data[i]["date"]} {data[i]["description"]}\n{data[i]["from"]} -> {data[i]["to"]}\n{data[i]["operationAmount"]}'
         print(str)
         print("")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
